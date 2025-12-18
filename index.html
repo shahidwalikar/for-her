@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&family=Caveat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="background-song" src="for_her1.mp3" loop></audio>
+    <div class="background-hearts"></div>
+    <div class="card">
+        <!-- Initial View -->
+        <div id="initial-view">
+            <h1>Hey my love ♡</h1>
+            <p>Do you know how much you really mean to me?</p>
+            <button id="reveal-button">Open My Heart 💌</button>
+        </div>
+
+        <!-- Cuteness Meter View -->
+        <div id="meter-view" class="hidden">
+            <h2>Cuteness Meter</h2>
+            <div class="meter-container">
+                <div class="meter-bar"></div>
+            </div>
+            <p class="meter-status"><span id="percentage">0%</span></p>
+            <div id="blast-container"></div>
+            <button id="next-step-button" class="hidden">Want to know what more I have in my heart for you?</button>
+        </div>
+
+        <!-- Reasons View -->
+        <div id="reasons-view" class="hidden">
+            <h2>Just a few reasons why...</h2>
+            <ul class="reasons-list">
+                <li class="reason-item">
+                    <span class="heart-icon">♡</span>
+                    <p class="reason-text">You make simple moments feel special.</p>
+                </li>
+                <li class="reason-item">
+                    <span class="heart-icon">♡</span>
+                    <p class="reason-text">Your presence feels like peace.</p>
+                </li>
+                <li class="reason-item">
+                    <span class="heart-icon">♡</span>
+                    <p class="reason-text">You matter to me more than you realize.</p>
+                </li>
+                <li class="reason-item">
+                    <span class="heart-icon">♡</span>
+                    <p class="reason-text">You make me want to be better.</p>
+                </li>
+                <li class="reason-item">
+                    <span class="heart-icon">♡</span>
+                    <p class="reason-text final-reason">And no matter what, my love for you never changes ♡</p>
+                </li>
+            </ul>
+            <button id="memories-button">Let's recall some memories of us</button>
+        </div>
+
+        <!-- Album View -->
+        <div id="album-view" class="hidden">
+            <p class="album-hint">Swipe gently… like turning pages 📖</p>
+            <div class="album-container">
+                <div class="album-slider">
+                    <div class="album-page">
+                        <img src="images/1that one day we'll never forget.jpeg" alt="A cherished memory">
+                        <p class="caption">That one day we'll never forget.</p>
+                    </div>
+                    <div class="album-page">
+                        <img src="images/2 This smile... it's my favorite.jpeg" alt="A cherished memory">
+                        <p class="caption">This smile... it's my favorite.</p>
+                    </div>
+                    <div class="album-page">
+                        <img src="images/3 Every moment with you feels like a dream.jpeg" alt="A cherished memory">
+                        <p class="caption">Every moment with you feels like a dream.</p>
+                    </div>
+                    <div class="album-page">
+                        <img src="images/4 I knew from this moment, it was always you.jpeg" alt="A cherished memory">
+                        <p class="caption">I knew from this moment, it was always you.</p>
+                    </div>
+                    <div class="album-page">
+                        <img src="images/5 And so many more memories to come.jpeg" alt="A cherished memory">
+                        <p class="caption">And so many more memories to come...</p>
+                    </div>
+                </div>
+                <button class="album-nav prev">‹</button>
+                <button class="album-nav next">›</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
