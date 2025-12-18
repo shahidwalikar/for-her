@@ -10,10 +10,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100%;
     background: var(--black);
     color: #f0f0f0;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .card {
@@ -28,6 +28,8 @@ body {
     z-index: 2;
     transition: all 0.5s ease;
     position: relative; /* For blast animation */
+    overflow-y: auto;
+    height: max-content;
 }
 
 h1, h2 {
